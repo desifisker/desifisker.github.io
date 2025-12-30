@@ -17,7 +17,7 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
     gem 'jekyll-tabs'
-    gem 'jekyll-terser', :git => "https://github.com/Strappazzon/jekyll-terser.git"
+    gem "jekyll-terser", "< 1.0.0"
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
