@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "desifisker/desifisker-desifisker.github.io",
+    "data-repo": "desifisker/desifisker.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
