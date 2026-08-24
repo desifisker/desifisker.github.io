@@ -31,7 +31,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Research projects, tools, and collaborations.",
+          description: "Research projects, creative work, tools, and collaborations.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -50,7 +50,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{
+        },{id: "projects-photography",
+          title: 'photography',
+          description: "Event photography galleries and visual storytelling.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/photography/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
