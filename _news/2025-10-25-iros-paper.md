@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "UAV See, UGV Do: Aerial Imagery and Virtual Teach Enabling Zero-Shot Ground Vehicle Repeat" appeared at IROS 2025.
+Our [paper](/assets/pdf/fisker-uav-see-ugv-do-iros-2025.pdf) "UAV See, UGV Do: Aerial Imagery and Virtual Teach Enabling Zero-Shot Ground Vehicle Repeat" appeared at IROS 2025.

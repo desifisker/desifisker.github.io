@@ -101,7 +101,7 @@ Common files:
 - `_projects/*.md` - project pages.
 - `_pages/blog.md` and `_posts/` - blog listing and blog posts.
 - `_news/*.md` - news items on the home page.
-- `_pages/cv.md` - CV page settings. `cv_pdf:` is intentionally blank so the CV is rendered as webpage sections instead of linking a PDF.
+- `_pages/cv.md` - CV page settings. `cv_pdf:` is intentionally blank so the CV tab renders as webpage sections.
 - `_pages/dropdown.md` - the `extras` dropdown in the top navigation.
 - `_pages/repositories.md` and `_pages/teaching.md` - currently set to `nav: false`, so they are hidden from the top navigation.
 
@@ -198,12 +198,18 @@ Edit:
 _data/cv.yml
 ```
 
-The CV page is rendered from this YAML file. The CV PDF is intentionally not published.
+The CV page is rendered from this YAML file. A public CV PDF is also linked from the social icons at the bottom of the About page.
 
 Keep this blank in `_pages/cv.md`:
 
 ```yaml
 cv_pdf:
+```
+
+The About-page CV icon is controlled in `_data/socials.yml`:
+
+```yaml
+cv_pdf: /assets/pdf/desiree-fisker-cv.pdf
 ```
 
 ### Publications
@@ -427,6 +433,7 @@ Do not put private CV/thesis/source documents there unless you want them publicl
 ## Current Published Files to Remember
 
 - Public IROS paper PDF: `assets/pdf/fisker-uav-see-ugv-do-iros-2025.pdf`
+- Public CV PDF: `assets/pdf/desiree-fisker-cv.pdf`
 - Public thesis link: <https://utoronto.scholaris.ca/items/f8efadbf-afb8-46e9-97be-72551ae875c0>
 - About-page headshot: `assets/img/desiree-fisker-headshot.jpg`
 - Rendered CV source: `_data/cv.yml`
