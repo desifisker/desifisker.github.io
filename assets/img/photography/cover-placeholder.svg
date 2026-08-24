@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Photography portfolio placeholder cover</title>
+  <desc id="desc">Abstract editorial event photography placeholder with warm light panels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171513"/>
+      <stop offset="0.42" stop-color="#46382f"/>
+      <stop offset="1" stop-color="#f0d5aa"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff4dd" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#c58b62" stop-opacity="0.24"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#bg)"/>
+  <circle cx="1340" cy="255" r="250" fill="#ffe9bf" opacity="0.38" filter="url(#soft)"/>
+  <circle cx="360" cy="930" r="320" fill="#725946" opacity="0.62" filter="url(#soft)"/>
+  <g opacity="0.92">
+    <rect x="160" y="175" width="380" height="600" rx="12" fill="#f7eee0" opacity="0.12"/>
+    <rect x="590" y="115" width="500" height="790" rx="12" fill="#fff8ec" opacity="0.14"/>
+    <rect x="1145" y="240" width="490" height="640" rx="12" fill="#1d1a18" opacity="0.48"/>
+  </g>
+  <g fill="none" stroke="url(#glow)" stroke-width="2" opacity="0.7">
+    <path d="M0 838 C300 720 505 805 760 690 C1020 572 1280 545 1800 360"/>
+    <path d="M0 910 C300 792 505 877 760 762 C1020 644 1280 617 1800 432"/>
+  </g>
+  <g fill="#fff6e8" opacity="0.78">
+    <rect x="230" y="245" width="245" height="16" rx="8"/>
+    <rect x="230" y="292" width="185" height="10" rx="5" opacity="0.68"/>
+    <rect x="660" y="220" width="310" height="20" rx="10"/>
+    <rect x="660" y="276" width="225" height="12" rx="6" opacity="0.7"/>
+    <rect x="1230" y="340" width="255" height="16" rx="8"/>
+    <rect x="1230" y="388" width="180" height="10" rx="5" opacity="0.66"/>
+  </g>
+</svg>
