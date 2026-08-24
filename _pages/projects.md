@@ -9,6 +9,13 @@ display_categories: [research, creative]
 horizontal: false
 ---
 
+<style>
+  .projects h2.category {
+    color: var(--global-theme-color);
+    border-bottom-color: color-mix(in srgb, var(--global-theme-color) 35%, transparent);
+  }
+</style>
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

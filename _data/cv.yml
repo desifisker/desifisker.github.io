@@ -2,7 +2,7 @@ cv:
   name: Desiree Fisker
   label: Robotics and Aerospace Engineering
   email: desi.fisker@gmail.com
-  location: Toronto, Ontario, Canada
+  location: Montréal, Québec, Canada
   image: ""
   summary: "Robotics and aerospace engineer focused on field robotics, autonomous navigation, UAV/UGV systems, perception, and scene reconstruction."
 
@@ -11,8 +11,8 @@ cv:
       username: desifisker
 
   address:
-    city: Toronto
-    region: Ontario
+    city: Montréal
+    region: Québec
 
   sections:
     Education:

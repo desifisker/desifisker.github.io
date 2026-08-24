@@ -2,10 +2,10 @@
 layout: page
 title: "DropOut, August 2026"
 permalink: /projects/photography/dropout-august-2026/
-description: "A skydiving event gallery from DropOut, August 12-20, 2026."
+description: "A Harry Potter-themed skydiving event gallery from DropOut."
 nav: false
-event_date_label: "August 12-20, 2026"
-event_location: "Parachute Montreal"
+event_date_label: "August 12-16, 2026"
+event_location: "Parachute Montréal"
 event_slug: dropout-august-2026
 event_cover: /assets/img/photography/events/dropout-august-2026/cover.jpg
 gallery_dir: /assets/img/photography/events/dropout-august-2026/
@@ -52,7 +52,6 @@ images:
   }
 
   .event-back,
-  .event-meta,
   .event-kicker {
     text-transform: uppercase;
     font-size: 0.72rem;
@@ -94,6 +93,28 @@ images:
   .event-summary p {
     color: var(--event-muted);
     font-size: 1.03rem;
+  }
+
+  .event-tapes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .event-tapes a {
+    border: 1px solid var(--global-theme-color);
+    border-radius: 999px;
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.38rem 0.85rem;
+    text-decoration: none;
+  }
+
+  .event-tapes a:hover {
+    background: var(--global-theme-color);
+    color: var(--global-hover-text-color);
   }
 
   .event-facts {
@@ -158,10 +179,6 @@ images:
       <a class="event-back" href="{{ '/projects/photography/' | relative_url }}">Photography</a>
       <h2>{{ page.title }}</h2>
       <p>{{ page.description }}</p>
-      <div class="event-meta">
-        {{ page.event_date_label }}
-        {% if page.event_location %} &middot; {{ page.event_location }}{% endif %}
-      </div>
     </div>
   </section>
 
@@ -169,9 +186,14 @@ images:
     <div>
       <p class="event-kicker">event notes</p>
       <p>
-        A visual record from DropOut, following skydivers through preparations on the ground, aircraft moments, freefall formations, canopy returns,
-        and the quieter details around the drop zone.
+        DropOut was my first professional fun-jumper camera flying event, and it was a properly magical Harry Potter-themed week at the drop
+        zone. This gallery is a mix of the best shots and my personal favourites: costumes, dirt dives, exit faces, canopy moments, and the small
+        bits of chaos that made the event feel like itself.
       </p>
+      <div class="event-tapes" aria-label="DropOut day tape video links">
+        <a href="https://www.youtube.com/" rel="external nofollow noopener" target="_blank">Day tape 1</a>
+        <a href="https://www.youtube.com/" rel="external nofollow noopener" target="_blank">Day tape 2</a>
+      </div>
     </div>
     <div class="event-facts" aria-label="Event details">
       <div><strong>Date</strong><span>{{ page.event_date_label }}</span></div>

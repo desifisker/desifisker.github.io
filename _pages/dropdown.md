@@ -10,6 +10,6 @@ children:
   - title: bookshelf
     permalink: /books/
   - title: divider
-  - title: photography
+  - title: Photography
     permalink: /projects/photography/
 ---

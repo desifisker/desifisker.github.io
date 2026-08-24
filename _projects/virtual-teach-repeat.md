@@ -2,7 +2,7 @@
 layout: page
 title: Virtual Teach and Repeat
 description: Aerial imagery and digital-twin scene reconstructions for zero-shot ground vehicle navigation.
-img: assets/img/publication_preview/uav-see-ugv-do.png
+img: assets/img/publication_preview/thesis.jpg
 importance: 0
 category: research
 permalink: /projects/virtual-teach-repeat/

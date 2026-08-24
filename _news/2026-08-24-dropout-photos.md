@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[DropOut 2026 photos](/projects/photography/dropout-august-2026/) have been released today.
+[DropOut 2026 photos](/projects/photography/dropout-august-2026/) have been released.

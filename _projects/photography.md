@@ -1,6 +1,6 @@
 ---
 layout: page
-title: photography
+title: Photography
 description: Event photography galleries and visual storytelling.
 img: assets/img/photography/header/pic5.jpg
 importance: 1
@@ -138,6 +138,10 @@ hero_images:
     font-size: 0.72rem;
     letter-spacing: 0;
     font-weight: 700;
+  }
+
+  .photo-hero__label {
+    color: #ffffff;
   }
 
   .photo-hero h2 {
