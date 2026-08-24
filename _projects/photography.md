@@ -23,6 +23,38 @@ hero_images:
     alt: Event photography header image 6
 ---
 
+<script>
+  (() => {
+    const photographyPath = "{{ '/projects/photography/' | relative_url }}";
+    const modeKey = "desireePhotographyNavMode";
+    let referrerPath = "";
+
+    try {
+      if (document.referrer) {
+        const referrer = new URL(document.referrer);
+        if (referrer.origin === window.location.origin) {
+          referrerPath = referrer.pathname;
+        }
+      }
+    } catch (error) {
+      referrerPath = "";
+    }
+
+    const cameFromPhotography = referrerPath.startsWith(photographyPath);
+    const cameFromAcademicSite = referrerPath && !cameFromPhotography;
+
+    if (cameFromAcademicSite) {
+      sessionStorage.setItem(modeKey, "full");
+    } else if (!cameFromPhotography) {
+      sessionStorage.setItem(modeKey, "compact");
+    }
+
+    if ((sessionStorage.getItem(modeKey) || "compact") === "compact") {
+      document.body.classList.add("photography-section");
+    }
+  })();
+</script>
+
 <style>
   body {
     overflow-x: hidden;
@@ -197,18 +229,26 @@ hero_images:
     align-items: center;
     gap: 0.85rem 1rem;
     grid-column: 1 / -1;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1rem 0;
   }
 
   .photo-contact a {
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1px solid var(--photo-line);
+    border-radius: 999px;
     color: var(--photo-ink);
     font-weight: 600;
     line-height: 1.4;
     text-decoration: none;
+    transition:
+      border-color 160ms ease,
+      color 160ms ease,
+      transform 160ms ease;
   }
 
   .photo-contact i {
@@ -216,8 +256,34 @@ hero_images:
     font-size: 1.05rem;
   }
 
+  .photo-contact .al-email-protect {
+    font-size: 0;
+  }
+
+  .photo-contact .al-email-protect::before {
+    content: "\f0e0";
+    color: var(--global-theme-color);
+    font-family: "Font Awesome 6 Free";
+    font-size: 1.05rem;
+    font-weight: 900;
+  }
+
   .photo-contact a:hover {
+    border-color: var(--global-theme-color);
     color: var(--global-hover-color);
+    transform: translateY(-1px);
+  }
+
+  .photo-contact a:hover i,
+  .photo-contact .al-email-protect:hover::before {
+    color: var(--global-hover-color);
+  }
+
+  .photo-contact__label {
+    color: var(--photo-ink);
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.4;
   }
 
   .photo-details div {
@@ -347,14 +413,11 @@ hero_images:
       </p>
     </div>
     <div class="photo-contact" aria-label="Photography contact links">
-      <a href="https://www.instagram.com/daisy.fisker/" rel="external nofollow noopener" target="_blank">
+      {% al_email_protect_link site.data.socials.email %}
+      <a href="https://www.instagram.com/daisy.fisker/" rel="external nofollow noopener" target="_blank" aria-label="Daisy Fisker on Instagram">
         <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-        <span>@daisy.fisker</span>
       </a>
-      <a href="mailto:desi.fisker@gmail.com">
-        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-        <span>desi.fisker@gmail.com</span>
-      </a>
+      <span class="photo-contact__label">get in touch</span>
     </div>
   </section>
 

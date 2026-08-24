@@ -17,6 +17,38 @@ images:
 {% assign gallery_files = site.static_files | where_exp: "file", "file.path contains page.gallery_dir and file.path contains '.jpg'" | sort: "path" %}
 {% assign photo_count = gallery_files | size | minus: 1 %}
 
+<script>
+  (() => {
+    const photographyPath = "{{ '/projects/photography/' | relative_url }}";
+    const modeKey = "desireePhotographyNavMode";
+    let referrerPath = "";
+
+    try {
+      if (document.referrer) {
+        const referrer = new URL(document.referrer);
+        if (referrer.origin === window.location.origin) {
+          referrerPath = referrer.pathname;
+        }
+      }
+    } catch (error) {
+      referrerPath = "";
+    }
+
+    const cameFromPhotography = referrerPath.startsWith(photographyPath);
+    const cameFromAcademicSite = referrerPath && !cameFromPhotography;
+
+    if (cameFromAcademicSite) {
+      sessionStorage.setItem(modeKey, "full");
+    } else if (!cameFromPhotography) {
+      sessionStorage.setItem(modeKey, "compact");
+    }
+
+    if ((sessionStorage.getItem(modeKey) || "compact") === "compact") {
+      document.body.classList.add("photography-section");
+    }
+  })();
+</script>
+
 <style>
   body {
     overflow-x: hidden;

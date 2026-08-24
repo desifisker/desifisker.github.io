@@ -35,3 +35,94 @@ html[data-theme="dark"] {
   --global-theme-color: #83d4a6;
   --global-hover-color: #a7e2bf;
 }
+
+body.photography-section {
+  #navbar.navbar {
+    background: rgba(255, 255, 255, 0.74);
+    border-bottom: 0;
+    box-shadow: none;
+    backdrop-filter: blur(14px);
+  }
+
+  #navbar .container {
+    position: relative;
+    max-width: none;
+    justify-content: flex-end;
+    padding-right: 0.85rem;
+    padding-left: 0.85rem;
+  }
+
+  #navbar .navbar-brand {
+    display: none;
+  }
+
+  #navbar .navbar-toggler-main {
+    display: block !important;
+    margin-left: auto;
+    padding: 0.48rem 0.58rem 0.38rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    background: var(--global-bg-color);
+  }
+
+  #navbar .navbar-collapse-main {
+    position: absolute;
+    top: calc(100% + 0.55rem);
+    right: 0.75rem;
+    display: none !important;
+    width: min(260px, calc(100vw - 1.5rem));
+    padding: 0.85rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-bg-color);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    text-align: left;
+  }
+
+  #navbar .navbar-collapse-main.show {
+    display: block !important;
+  }
+
+  #navbar .navbar-menu-list {
+    display: grid;
+    gap: 0.15rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #navbar .navbar-menu-list.flex-nowrap {
+    flex-wrap: wrap !important;
+  }
+
+  #navbar .nav-item,
+  #navbar .toggle-container {
+    width: 100%;
+  }
+
+  #navbar .nav-link,
+  #navbar #search-toggle .nav-link,
+  #navbar #light-toggle {
+    padding: 0.35rem 0;
+    text-align: left;
+  }
+
+  #navbar .dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    min-width: 100%;
+    margin: 0.25rem 0 0.5rem;
+    padding: 0.2rem 0 0 0.75rem;
+    border: 0;
+    box-shadow: none;
+    text-align: left;
+  }
+
+  #navbar .dropdown-menu.show {
+    display: block;
+  }
+}
+
+html[data-theme="dark"] body.photography-section #navbar.navbar {
+  background: rgba(18, 18, 18, 0.78);
+}

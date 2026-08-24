@@ -2,7 +2,7 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 cv_pdf: /assets/pdf/desiree-fisker-cv.pdf # path to your CV PDF file
-email: desi.fisker@gmail.com # your email address
+email: desiree.fisker@mail.mcgill.ca # your email address
 github_username: desifisker
 # rss_icon: true # uncomment this line to show the RSS icon
 scholar_userid: Udnq7moAAAAJ # your Google Scholar ID
