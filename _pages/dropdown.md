@@ -1,8 +1,8 @@
 ---
 layout: page
-title: submenus
+title: extras
 nav: true
-nav_order: 8
+nav_order: 6
 dropdown: true
 children:
   - title: news

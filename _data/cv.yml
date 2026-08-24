@@ -45,6 +45,7 @@ cv:
         summary: "With Alexander Krawciw, Sven Lilge, Melissa Greeff, and Timothy D. Barfoot. Pages 17518-17525."
       - title: "Zero-Shot Ground Vehicle Navigation Enabled by Aerial-Based Digital Twin Scene Reconstructions"
         date: "2025"
+        url: https://utoronto.scholaris.ca/items/f8efadbf-afb8-46e9-97be-72551ae875c0
         publisher: University of Toronto Institute for Aerospace Studies
         summary: "Master of Applied Science thesis."
       - title: "Pneumatic Model Plane Launching System"
@@ -52,6 +53,9 @@ cv:
         url: http://hdl.handle.net/1974/31460
         publisher: "PHYS/ENPH 454 Advanced Engineering Physics Design Project Collection, Queen's University"
         summary: "With A. Zhong, B. Beggs, C. Viloria, J. Fisman-Guarascio, and T. Lahteenmaa-Swerdlyk."
+
+    Research Interests:
+      - bullet: "Robotics, systems engineering, UAVs and UGVs, aerospace engineering, computer vision, and perception."
 
     Projects:
       - name: Virtual Teach and Repeat via NeRF World Representations
@@ -107,6 +111,12 @@ cv:
       - bullet: "**First-Year Calculus TA Coordinator, University of Toronto.** Coordinated grading, office hours, and tutorial content across 22 teaching assistants for approximately 1100 students."
       - bullet: "**Engineering Design 200A/200B Teaching Assistant, Queen's University.** Supported technical course instruction, graded reports and presentations, and managed four teams of five students."
 
+    Professional Memberships:
+      - bullet: "IEEE Student Member."
+      - bullet: "Scuba Schools International member."
+      - bullet: "Coaching Association of Canada member."
+      - bullet: "Canadian Sport Parachuting Association member."
+
     Volunteer:
       - organization: Queen's Rocket Engineering Team
         position: Chief Operations Officer
@@ -140,7 +150,14 @@ cv:
       - title: MITx Certificate of Achievement
         date: "2016"
         awarder: Massachusetts Institute of Technology
-        summary: "Introduction to Aerospace Engineering: Astronautics and Human Space Flight."
+        summary: "Introduction to Aerospace Engineering: Astronautics and Human Space Flight; GPA 4.00."
+
+    Hobbies and Accomplishments:
+      - bullet: "Sport skydiving: 500+ solo skydives over three summer seasons."
+      - bullet: "Scuba and cavern diving: Advanced Open Water certified with six cenote cavern dives."
+      - bullet: "Rock climbing: bouldering and top-rope certified."
+      - bullet: "Backcountry camping: three week-long ocean kayak camping trips and one three-day winter camping trip."
+      - bullet: "Woodworking projects including a folding Muskoka chair and magnetic levitating fan."
 
     Skills:
       - name: Programming
@@ -189,3 +206,8 @@ cv:
           - Wind tunnel testing
           - Carbon fiber filament winding
           - Hydrostatic pressure chamber testing
+          - Explosives bunker testing
+          - Small-scale UAVs and UGVs
+          - Pixhawk
+          - Taps
+          - Saws and blades

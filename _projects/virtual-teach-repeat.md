@@ -21,3 +21,4 @@ The resulting virtual route is converted into a teach map with point-cloud subma
 ## Documents
 
 - [IROS 2025 paper](/assets/pdf/fisker-uav-see-ugv-do-iros-2025.pdf)
+- [MASc thesis](https://utoronto.scholaris.ca/items/f8efadbf-afb8-46e9-97be-72551ae875c0)

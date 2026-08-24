@@ -8,6 +8,15 @@ category: creative
 permalink: /projects/photography/
 images:
   lightbox2: true
+hero_images:
+  - image: /assets/img/photography/events/dropout-august-2026/cover.jpg
+    alt: DropOut event skydiving scene
+  - image: /assets/img/photography/events/dropout-august-2026/dropout-00050-2026-08-12.jpg
+    alt: DropOut event candid moment
+  - image: /assets/img/photography/events/dropout-august-2026/dropout-00100-2026-08-12.jpg
+    alt: DropOut event action photo
+  - image: /assets/img/photography/events/dropout-august-2026/dropout-00145-2026-08-12.jpg
+    alt: DropOut event gathering photo
 ---
 
 <style>
@@ -37,15 +46,85 @@ images:
   }
 
   .photo-hero {
+    position: relative;
     min-height: clamp(340px, 58vh, 620px);
     display: grid;
     align-items: end;
     padding: clamp(2rem, 5vw, 4.5rem);
     margin: 0 calc(50% - 50vw) 3rem;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.72)), url("{{ '/assets/img/photography/events/dropout-august-2026/cover.jpg' | relative_url }}");
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
+    background: #111111;
     color: #ffffff;
+  }
+
+  .photo-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.72));
+  }
+
+  .photo-hero__slides,
+  .photo-hero__slide,
+  .photo-hero__slide img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo-hero__slide {
+    opacity: 0;
+    transition: opacity 650ms ease;
+  }
+
+  .photo-hero__slide.is-active {
+    opacity: 1;
+  }
+
+  .photo-hero__slide img {
+    object-fit: cover;
+    display: block;
+  }
+
+  .photo-hero__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .photo-hero__controls {
+    position: absolute;
+    right: clamp(1.25rem, 5vw, 4.5rem);
+    bottom: clamp(1.25rem, 3vw, 2.5rem);
+    z-index: 3;
+    display: flex;
+    gap: 0.65rem;
+  }
+
+  .photo-hero__control {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.22);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.35rem;
+    line-height: 1;
+    transition:
+      background-color 160ms ease,
+      transform 160ms ease;
+  }
+
+  .photo-hero__control:hover,
+  .photo-hero__control:focus-visible {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    outline: none;
   }
 
   .photo-hero__label,
@@ -173,6 +252,11 @@ images:
       padding: 2rem 1.25rem;
     }
 
+    .photo-hero__controls {
+      right: 1.25rem;
+      bottom: 1.25rem;
+    }
+
     .photo-intro {
       grid-template-columns: 1fr;
     }
@@ -180,12 +264,33 @@ images:
 </style>
 
 <div class="photo-page">
-  <section class="photo-hero" aria-label="Photography portfolio header">
-    <div>
-      <div class="photo-hero__label">event photography</div>
-      <h2>Professional gatherings, documented with care.</h2>
+  <section class="photo-hero" aria-label="Photography portfolio header" data-photo-carousel>
+    <div class="photo-hero__slides" aria-hidden="true">
+      {% for hero_image in page.hero_images %}
+        <div class="photo-hero__slide{% if forloop.first %} is-active{% endif %}" data-photo-slide>
+          <img
+            src="{{ hero_image.image | relative_url }}"
+            alt="{{ hero_image.alt | default: 'Event photography image' | escape }}"
+            {% if forloop.first %}
+              loading="eager"
+            {% else %}
+              loading="lazy"
+            {% endif %}
+          >
+        </div>
+      {% endfor %}
+    </div>
+    <div class="photo-hero__content">
+      <div class="photo-hero__label">photography</div>
+      <h2>Moments in the sky and on the ground, documented with care.</h2>
       <p>Selected photo galleries from conferences, community events, public programs, and academic gatherings.</p>
     </div>
+    {% if page.hero_images.size > 1 %}
+      <div class="photo-hero__controls" aria-label="Photography header image controls">
+        <button class="photo-hero__control" type="button" aria-label="Previous photo" data-photo-prev>&larr;</button>
+        <button class="photo-hero__control" type="button" aria-label="Next photo" data-photo-next>&rarr;</button>
+      </div>
+    {% endif %}
   </section>
 
   <section class="photo-intro">
@@ -230,3 +335,51 @@ images:
     {% endif %}
   </section>
 </div>
+
+<script>
+  (() => {
+    document.querySelectorAll("[data-photo-carousel]").forEach((carousel) => {
+      const slides = Array.from(carousel.querySelectorAll("[data-photo-slide]"));
+      const previous = carousel.querySelector("[data-photo-prev]");
+      const next = carousel.querySelector("[data-photo-next]");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let activeIndex = 0;
+      let timer;
+
+      if (slides.length < 2 || !previous || !next) return;
+
+      const showSlide = (nextIndex) => {
+        slides[activeIndex].classList.remove("is-active");
+        activeIndex = (nextIndex + slides.length) % slides.length;
+        slides[activeIndex].classList.add("is-active");
+      };
+
+      const stopRotation = () => {
+        if (timer) window.clearInterval(timer);
+      };
+
+      const startRotation = () => {
+        if (reduceMotion) return;
+        stopRotation();
+        timer = window.setInterval(() => showSlide(activeIndex + 1), 6500);
+      };
+
+      previous.addEventListener("click", () => {
+        showSlide(activeIndex - 1);
+        startRotation();
+      });
+
+      next.addEventListener("click", () => {
+        showSlide(activeIndex + 1);
+        startRotation();
+      });
+
+      carousel.addEventListener("mouseenter", stopRotation);
+      carousel.addEventListener("mouseleave", startRotation);
+      carousel.addEventListener("focusin", stopRotation);
+      carousel.addEventListener("focusout", startRotation);
+
+      startRotation();
+    });
+  })();
+</script>

@@ -8,7 +8,7 @@ subtitle: Robotics, aerospace engineering, autonomous navigation, and field expe
 
 profile:
   align: right
-  image: # add a headshot to assets/img/ and put the filename here
+  image: desiree-fisker-headshot.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>Robotics and Aerospace Engineering</p>
