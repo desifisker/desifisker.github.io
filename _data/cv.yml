@@ -1,20 +1,191 @@
 cv:
   name: Desiree Fisker
-  label: Academic
+  label: Robotics and Aerospace Engineering
   email: desi.fisker@gmail.com
-  location:
+  location: Toronto, Ontario, Canada
   image: ""
-  summary: ""
+  summary: "Robotics and aerospace engineer focused on field robotics, autonomous navigation, UAV/UGV systems, perception, and scene reconstruction."
 
   social_networks:
     - network: GitHub
       username: desifisker
 
-  address: {}
+  address:
+    city: Toronto
+    region: Ontario
 
   sections:
-    Education: []
-    Appointments: []
-    Publications: []
-    Awards: []
-    Teaching: []
+    Education:
+      - institution: University of Toronto
+        location: Toronto, Ontario, Canada
+        degree: Master of Applied Science
+        area: Aerospace Engineering, Collaborative Specialization in Robotics
+        start_date: "2023-09"
+        end_date: "2025-08"
+        highlights:
+          - "CGPA: 3.62."
+          - "Notable coursework: State Estimation, Robot Motion Planning, Perception for Robotics, UAV Design."
+          - "Teaching: First-Year Calculus TA Coordinator for a course serving approximately 1100 students and coordinating 22 teaching assistants."
+      - institution: Queen's University
+        location: Kingston, Ontario, Canada
+        degree: Bachelor of Applied Science
+        area: Engineering Physics, Mechanical Sub-Specialization
+        start_date: "2018-09"
+        end_date: "2023-04"
+        highlights:
+          - "CGPA: 3.55; last two years' GPA: 4.00."
+          - "Notable coursework: Mechanics, Introduction to Robotics, Automatic Control, Thesis."
+          - "Teaching: Engineering Design 200A/200B TA, supporting technical instruction and student design-team assessment."
+
+    Publications:
+      - title: "UAV See, UGV Do: Aerial Imagery and Virtual Teach Enabling Zero-Shot Ground Vehicle Repeat"
+        date: "2025"
+        url: https://doi.org/10.1109/IROS60139.2025.11247387
+        publisher: "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+        summary: "With Alexander Krawciw, Sven Lilge, Melissa Greeff, and Timothy D. Barfoot. Pages 17518-17525."
+      - title: "Zero-Shot Ground Vehicle Navigation Enabled by Aerial-Based Digital Twin Scene Reconstructions"
+        date: "2025"
+        publisher: University of Toronto Institute for Aerospace Studies
+        summary: "Master of Applied Science thesis."
+      - title: "Pneumatic Model Plane Launching System"
+        date: "2023"
+        url: http://hdl.handle.net/1974/31460
+        publisher: "PHYS/ENPH 454 Advanced Engineering Physics Design Project Collection, Queen's University"
+        summary: "With A. Zhong, B. Beggs, C. Viloria, J. Fisman-Guarascio, and T. Lahteenmaa-Swerdlyk."
+
+    Projects:
+      - name: Virtual Teach and Repeat via NeRF World Representations
+        summary: "Aerial-image-based digital twin pipeline for virtually teaching UGV routes before real-world deployment."
+        highlights:
+          - "Developed a pipeline for virtual piloting of a UGV in simulation using a drone-image-trained NeRF reconstruction."
+          - "Tuned NeRF training parameters for clear, differentiable novel viewpoints of large-scale outdoor scenes."
+          - "Compared physical and virtual sensor models to align depth and feature information for dataset construction."
+      - name: Autonomous UAV Navigation
+        summary: "GNSS-denied UAV localization using satellite imagery, inverse NeRF methods, and real image-pose datasets."
+        highlights:
+          - "Worked on GNSS-denied UAV localization below 30 m AGL using Google Earth satellite imagery and inverse NeRF methods."
+          - "Created image-pose datasets with stereo camera tracking in a VICON lab."
+          - "Evaluated Google Earth 3D renders against real images using SIFT, SURF, ORB, and SuperPoint."
+      - name: RRT Path Planning and Deep Reinforcement Learning
+        summary: "Sampling-based path planning work that conditions future RRT samples on previous sampling experience."
+        highlights:
+          - "Modified RRT sampling to condition future states on previous sampling experience."
+          - "Developed baseline learned-experience systems using Hidden Markov Models and recurrent neural networks."
+      - name: Trajectory Optimization for Solar-Powered UAVs with NEAT
+        summary: "Trajectory optimization for long-duration solar-powered UAV flight."
+        highlights:
+          - "Built Python simulations and tuned NEAT-based neural network architectures for solar-powered UAV trajectory optimization."
+          - "Integrated receding horizon control to reduce computational cost."
+
+    Experience:
+      - company: Cesaroni Technology Inc.
+        position: Aerospace Engineering Intern
+        start_date: "2021-05"
+        end_date: "2022-08"
+        highlights:
+          - "Contributed to large-scale testing facility CAD assemblies and test-system design."
+          - "Designed and implemented signal monitoring, data acquisition, and load-cell mounting methods for hazardous testing environments."
+          - "Used mathematical models and SolidWorks FEA to optimize retaining-ring and airframe components."
+      - company: Royal Military College of Canada, Advanced Aircraft Design Lab
+        position: Aerospace Engineering Research Assistant
+        start_date: "2020-05"
+        end_date: "2020-12"
+        highlights:
+          - "Integrated hardware and software for attitude and stabilization control on UAVs and UGVs."
+          - "Built MATLAB and Python tools for waypoint and obstacle assessment from magnetic-field data."
+          - "Conducted outdoor navigation testing and created startup documentation for autonomous guidance hardware."
+      - company: Skydive Toronto Inc.
+        position: Instructor, Coach, Video Flyer, and Packer
+        start_date: "2021-06"
+        end_date: present
+        highlights:
+          - "Provided adaptive teaching and safety instruction to novice skydivers."
+          - "Conducted pre-boarding, pre-jump, and post-gear-up safety and gear checks."
+          - "Packed over 700 Sigma and Micro Sigma tandem parachutes and 800 sport parachutes with no malfunctions and clean openings."
+
+    Teaching:
+      - bullet: "**First-Year Calculus TA Coordinator, University of Toronto.** Coordinated grading, office hours, and tutorial content across 22 teaching assistants for approximately 1100 students."
+      - bullet: "**Engineering Design 200A/200B Teaching Assistant, Queen's University.** Supported technical course instruction, graded reports and presentations, and managed four teams of five students."
+
+    Volunteer:
+      - organization: Queen's Rocket Engineering Team
+        position: Chief Operations Officer
+        start_date: "2022-07"
+        end_date: "2023-06"
+        highlights:
+          - "Worked with Queen's faculty on alumni funding frameworks and design-team strategic planning."
+          - "Guided subteam leads on meetings, technical research, team engagement, and report deadlines."
+      - organization: Queen's Rocket Engineering Team
+        position: Chief Technical Officer
+        start_date: "2020-07"
+        end_date: "2021-06"
+        highlights:
+          - "Evaluated sounding-rocket design choices across composite, mechanical, and electrical subsystems."
+          - "Established vibration, ejection, continuity, and payload testing methods."
+      - organization: Queen's Rocket Engineering Team
+        position: Payload Team Lead
+        start_date: "2019-07"
+        end_date: "2020-06"
+        highlights:
+          - "Led payload research, documentation, subsystem testing, and technical-skill development."
+          - "Developed a mechanical double-split parachute deployment mechanism and payload concepts for dark-matter detection and exo-planetary exploration."
+
+    Awards:
+      - title: Queen's University Dean's Scholar
+        summary: "First Class Honours Graduate."
+      - title: Queen's University Principal's Scholarship
+        summary: "$7,000 scholarship."
+      - title: NSERC Undergraduate Student Research Award
+        summary: "$6,000 research award for work at the Royal Military College of Canada."
+      - title: MITx Certificate of Achievement
+        date: "2016"
+        awarder: Massachusetts Institute of Technology
+        summary: "Introduction to Aerospace Engineering: Astronautics and Human Space Flight."
+
+    Skills:
+      - name: Programming
+        keywords:
+          - Python
+          - PyTorch
+          - PySTEAM
+          - Pylgmath
+          - NEAT
+          - TensorFlow
+          - C++
+          - Arduino
+          - MATLAB
+      - name: Robotics and Simulation
+        keywords:
+          - ROS 1
+          - ROS 2
+          - Rviz
+          - Gazebo
+          - VT&R3
+          - NeRFStudio
+          - Instant-NGP
+          - Colmap
+      - name: Engineering Software
+        keywords:
+          - SolidWorks
+          - ANSYS
+          - Git
+          - LTSpice
+          - KiCAD
+          - LaTeX
+          - VSCode
+          - Ubuntu
+          - Docker
+      - name: Design, Manufacturing, and Testing
+        keywords:
+          - FEA
+          - CAD assemblies
+          - Drill presses
+          - Lathes
+          - Mills
+          - Soldering
+          - 3D printing
+          - Oscilloscopes
+          - Multimeters
+          - Wind tunnel testing
+          - Carbon fiber filament winding
+          - Hydrostatic pressure chamber testing

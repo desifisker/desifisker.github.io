@@ -7,3 +7,13 @@
 
 "Vision":
   color: "#009f36"
+
+"IROS":
+  url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros
+  color: "#00629b"
+
+"Thesis":
+  color: "#6a4c93"
+
+"Design":
+  color: "#007f5f"

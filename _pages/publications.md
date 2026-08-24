@@ -2,14 +2,12 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications generated from BibTeX.
+description: Peer-reviewed papers, manuscripts, and thesis work.
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 <!-- _pages/publications.md -->
-
-Add BibTeX entries to `_bibliography/papers.bib`. Entries marked with `selected = {true}` can also be shown on the home page.
 
 <!-- Bibsearch Feature -->
 
