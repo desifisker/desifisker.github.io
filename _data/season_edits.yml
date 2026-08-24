@@ -1,0 +1,15 @@
+# Add future season edits here. Either `youtube` or `video` can be used for each entry.
+#
+# - title: "2026 Season Edit"
+#   season: "2026"
+#   location: "Parachute Montréal"
+#   achievement: "Camera flying, coaching, and event jumps"
+#   description: "A short note about what the season was, where it happened, and what it meant."
+#   youtube: "https://www.youtube.com/embed/VIDEO_ID"
+#
+# - title: "2025 Season Edit"
+#   season: "2025"
+#   location: "Drop zone or region"
+#   achievement: "Skill, rating, or milestone"
+#   description: "A short note about the season."
+#   video: "/assets/video/photography/season-edits/2025-season-edit.mp4"

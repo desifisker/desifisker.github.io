@@ -144,6 +144,11 @@ hero_images:
     color: #ffffff;
   }
 
+  .photo-kicker--title {
+    text-transform: none;
+    font-size: 0.86rem;
+  }
+
   .photo-hero h2 {
     max-width: 720px;
     margin: 0.6rem 0 0;
@@ -187,15 +192,28 @@ hero_images:
   .photo-contact {
     border-top: 1px solid var(--photo-line);
     border-bottom: 1px solid var(--photo-line);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem 1rem;
+    grid-column: 1 / -1;
+    justify-content: flex-start;
     padding: 1rem 0;
   }
 
-  .photo-contact a,
-  .photo-contact span {
-    display: block;
+  .photo-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     color: var(--photo-ink);
     font-weight: 600;
-    line-height: 1.7;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .photo-contact i {
+    color: var(--global-theme-color);
+    font-size: 1.05rem;
   }
 
   .photo-contact a:hover {
@@ -308,8 +326,7 @@ hero_images:
     </div>
     <div class="photo-hero__content">
       <div class="photo-hero__label">photography</div>
-      <h2>Moments in the sky and on the ground, documented with care.</h2>
-      <p>Selected photo galleries from conferences, community events, public programs, and academic gatherings.</p>
+      <h2>Selected photo galleries from conferences, community events, public programs, and academic gatherings.</h2>
     </div>
     {% if page.hero_images.size > 1 %}
       <div class="photo-hero__controls" aria-label="Photography header image controls">
@@ -321,16 +338,23 @@ hero_images:
 
   <section class="photo-intro">
     <div>
-      <p class="photo-kicker">approach</p>
-      <h3>Visual records for the moments that make an event feel alive.</h3>
+      <p class="photo-kicker photo-kicker--title">About Me</p>
+      <h3>I enjoy capturing moments in the sky and on the ground, documented with care.</h3>
       <p>
-        This portfolio is a home for event galleries: candid interactions, speakers, details, room atmosphere, and the small in-between moments
-        that help people remember what it felt like to be there.
+        I have been skydiving since 2021 and have worked as a packer, coach, instructor, and tandem video flyer. I have 900 jumps, and I am
+        excited to branch out into event and fun-jumper camera flying so I can capture the stoke and pure joy that comes from all of our favourite
+        moments at the DZ with the ones we love! - Daisy
       </p>
     </div>
     <div class="photo-contact" aria-label="Photography contact links">
-      <a href="https://www.instagram.com/daisy.fisker/" rel="external nofollow noopener" target="_blank">Instagram: @daisy.fisker</a>
-      <a href="mailto:desi.fisker@gmail.com">desi.fisker@gmail.com</a>
+      <a href="https://www.instagram.com/daisy.fisker/" rel="external nofollow noopener" target="_blank">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <span>@daisy.fisker</span>
+      </a>
+      <a href="mailto:desi.fisker@gmail.com">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <span>desi.fisker@gmail.com</span>
+      </a>
     </div>
   </section>
 
