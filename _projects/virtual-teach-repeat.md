@@ -2,6 +2,7 @@
 layout: page
 title: Virtual Teach and Repeat
 description: Aerial imagery and digital-twin scene reconstructions for zero-shot ground vehicle navigation.
+img: assets/img/publication_preview/uav-see-ugv-do.png
 importance: 0
 category: research
 permalink: /projects/virtual-teach-repeat/
@@ -22,3 +23,8 @@ The resulting virtual route is converted into a teach map with point-cloud subma
 
 - [IROS 2025 paper](/assets/pdf/fisker-uav-see-ugv-do-iros-2025.pdf)
 - [MASc thesis](https://utoronto.scholaris.ca/items/f8efadbf-afb8-46e9-97be-72551ae875c0)
+
+## Media and Code
+
+- Image: add project images under `assets/img/projects/virtual-teach-repeat/`.
+- Code: add repository links here when ready.

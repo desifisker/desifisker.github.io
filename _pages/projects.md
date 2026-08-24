@@ -5,7 +5,7 @@ permalink: /projects/
 description: Research projects, creative work, tools, and collaborations.
 nav: true
 nav_order: 4
-display_categories: []
+display_categories: [research, creative]
 horizontal: false
 ---
 

@@ -25,13 +25,13 @@
 @use "typograms";
 
 :root {
-  --global-code-bg-color: rgba(47, 111, 78, 0.08);
-  --global-theme-color: #2f6f4e;
-  --global-hover-color: #24563d;
+  --global-code-bg-color: rgba(47, 143, 91, 0.08);
+  --global-theme-color: #2f8f5b;
+  --global-hover-color: #246b47;
 }
 
 html[data-theme="dark"] {
-  --global-code-bg-color: rgba(117, 198, 154, 0.12);
-  --global-theme-color: #75c69a;
-  --global-hover-color: #9bd7b5;
+  --global-code-bg-color: rgba(131, 212, 166, 0.12);
+  --global-theme-color: #83d4a6;
+  --global-hover-color: #a7e2bf;
 }

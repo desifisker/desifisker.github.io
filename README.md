@@ -263,16 +263,18 @@ The rotating header images are controlled by this front matter:
 
 ```yaml
 hero_images:
-  - image: /assets/img/photography/events/dropout-august-2026/cover.jpg
-    alt: DropOut event skydiving scene
+  - image: /assets/img/photography/header/pic1.jpg
+    alt: Event photography header image 1
 ```
 
 To choose different rotating header photos:
 
-1. Put the images somewhere under `assets/img/photography/events/`.
+1. Put optimized web copies under `assets/img/photography/header/`.
 2. Add or replace entries under `hero_images`.
 3. Keep the paths starting with `/assets/...`.
 4. Add useful `alt` text for each image.
+
+The original uploaded header photos are ignored from Git in `website_header_pics/`; publish resized copies under `assets/img/photography/header/`.
 
 ### Photography Event Galleries
 
@@ -289,6 +291,7 @@ assets/img/photography/events/dropout-august-2026/
 ```
 
 The gallery page automatically displays `.jpg` files in that folder except `cover.jpg`.
+The current DropOut cover/event-card image is `assets/img/photography/events/dropout-august-2026/cover.jpg`.
 
 The photography landing page gets its event cards from:
 
@@ -439,6 +442,26 @@ assets/pdf/
 
 Do not put private CV/thesis/source documents there unless you want them publicly downloadable.
 
+### I Want to Add Project Media or Code
+
+Project cards use the `img:` field in each `_projects/*.md` file. Projects without real images currently point at:
+
+```text
+assets/img/project-placeholder.svg
+```
+
+When you have a real image, put it somewhere under `assets/img/projects/`, update `img:`, and replace the placeholder note under that project's `Media and Code` section. Add code links in that same section.
+
+### I Want to Link Publication Authors
+
+Publication author links are managed in:
+
+```text
+_data/coauthors.yml
+```
+
+Add a lowercase last-name key and matching first-name variants there; al-folio will link matching names in publication lists.
+
 ## Current Published Files to Remember
 
 - Public IROS paper PDF: `assets/pdf/fisker-uav-see-ugv-do-iros-2025.pdf`
@@ -447,7 +470,10 @@ Do not put private CV/thesis/source documents there unless you want them publicl
 - About-page headshot: `assets/img/desiree-fisker-headshot.jpg`
 - Publication previews: `assets/img/publication_preview/`
 - Publication videos: `assets/video/`
+- Publication coauthor links: `_data/coauthors.yml`
 - Selected repository list: `_data/repositories.yml`
 - Rendered CV source: `_data/cv.yml`
+- Project placeholder image: `assets/img/project-placeholder.svg`
+- Photography header images: `assets/img/photography/header/`
 - Photography landing page: `_projects/photography.md`
 - DropOut gallery page: `_pages/photography/dropout-august-2026.md`

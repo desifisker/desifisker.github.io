@@ -32,3 +32,11 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"greeff":
+  - firstname: ["Melissa", "M."]
+    url: https://roboralab.com/team.html
+
+"barfoot":
+  - firstname: ["Timothy", "Timothy D.", "T. D."]
+    url: https://asrl.utias.utoronto.ca/~tdb/

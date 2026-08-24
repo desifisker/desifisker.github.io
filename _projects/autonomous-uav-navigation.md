@@ -2,6 +2,7 @@
 layout: page
 title: Autonomous UAV Navigation
 description: GNSS-denied UAV localization with satellite imagery, inverse NeRF methods, and real image-pose datasets.
+img: assets/img/project-placeholder.svg
 importance: 2
 category: research
 permalink: /projects/autonomous-uav-navigation/
@@ -23,3 +24,8 @@ This project explored autonomous UAV localization below 30 m AGL without GNSS by
 - Created image-pose pair datasets by tracking multiple reference frames with a stereo camera in a VICON lab.
 - Evaluated Google Earth 3D renders against real imagery using SIFT, SURF, ORB, and SuperPoint feature matching.
 - Focused on pose recovery for low-altitude UAV flight in GNSS-denied environments.
+
+## Media and Code
+
+- Image: add project images under `assets/img/projects/autonomous-uav-navigation/`.
+- Code: add repository links here when ready.

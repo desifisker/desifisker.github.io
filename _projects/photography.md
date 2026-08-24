@@ -2,21 +2,25 @@
 layout: page
 title: photography
 description: Event photography galleries and visual storytelling.
-img: assets/img/photography/events/dropout-august-2026/cover.jpg
+img: assets/img/photography/header/pic5.jpg
 importance: 1
 category: creative
 permalink: /projects/photography/
 images:
   lightbox2: true
 hero_images:
-  - image: /assets/img/photography/events/dropout-august-2026/cover.jpg
-    alt: DropOut event skydiving scene
-  - image: /assets/img/photography/events/dropout-august-2026/dropout-00050-2026-08-12.jpg
-    alt: DropOut event candid moment
-  - image: /assets/img/photography/events/dropout-august-2026/dropout-00100-2026-08-12.jpg
-    alt: DropOut event action photo
-  - image: /assets/img/photography/events/dropout-august-2026/dropout-00145-2026-08-12.jpg
-    alt: DropOut event gathering photo
+  - image: /assets/img/photography/header/pic1.jpg
+    alt: Event photography header image 1
+  - image: /assets/img/photography/header/pic2.jpg
+    alt: Event photography header image 2
+  - image: /assets/img/photography/header/pic3.jpg
+    alt: Event photography header image 3
+  - image: /assets/img/photography/header/pic4.jpg
+    alt: Event photography header image 4
+  - image: /assets/img/photography/header/pic5.jpg
+    alt: Event photography header image 5
+  - image: /assets/img/photography/header/dsc06025.jpg
+    alt: Event photography header image 6
 ---
 
 <style>
@@ -63,7 +67,7 @@ hero_images:
     inset: 0;
     z-index: 1;
     pointer-events: none;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.72));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.6));
   }
 
   .photo-hero__slides,
@@ -137,18 +141,18 @@ hero_images:
   }
 
   .photo-hero h2 {
-    max-width: 880px;
+    max-width: 720px;
     margin: 0.6rem 0 0;
-    font-size: clamp(2.4rem, 7vw, 5.6rem);
-    line-height: 0.98;
+    font-size: clamp(1.65rem, 4.8vw, 3.6rem);
+    line-height: 1.04;
     color: #ffffff;
   }
 
   .photo-hero p {
-    max-width: 680px;
+    max-width: 560px;
     margin: 1rem 0 0;
     color: rgba(255, 255, 255, 0.88);
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(0.92rem, 1.5vw, 1.05rem);
   }
 
   .photo-intro {
@@ -174,6 +178,24 @@ hero_images:
     border-top: 1px solid var(--photo-line);
     border-bottom: 1px solid var(--photo-line);
     padding: 1rem 0;
+  }
+
+  .photo-contact {
+    border-top: 1px solid var(--photo-line);
+    border-bottom: 1px solid var(--photo-line);
+    padding: 1rem 0;
+  }
+
+  .photo-contact a,
+  .photo-contact span {
+    display: block;
+    color: var(--photo-ink);
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  .photo-contact a:hover {
+    color: var(--global-hover-color);
   }
 
   .photo-details div {
@@ -302,10 +324,9 @@ hero_images:
         that help people remember what it felt like to be there.
       </p>
     </div>
-    <div class="photo-details" aria-label="Photography focus areas">
-      <div><strong>Focus</strong><span>events and programs</span></div>
-      <div><strong>Style</strong><span>candid, warm, editorial</span></div>
-      <div><strong>Use</strong><span>web, press, archives</span></div>
+    <div class="photo-contact" aria-label="Photography contact links">
+      <a href="https://www.instagram.com/daisy.fisker/" rel="external nofollow noopener" target="_blank">Instagram: @daisy.fisker</a>
+      <a href="mailto:desi.fisker@gmail.com">desi.fisker@gmail.com</a>
     </div>
   </section>
 
