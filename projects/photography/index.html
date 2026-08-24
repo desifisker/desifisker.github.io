@@ -125,6 +125,11 @@
     color: #ffffff;
   }
 
+  .photo-kicker--title {
+    text-transform: none;
+    font-size: 0.86rem;
+  }
+
   .photo-hero h2 {
     max-width: 720px;
     margin: 0.6rem 0 0;
@@ -168,15 +173,28 @@
   .photo-contact {
     border-top: 1px solid var(--photo-line);
     border-bottom: 1px solid var(--photo-line);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem 1rem;
+    grid-column: 1 / -1;
+    justify-content: flex-start;
     padding: 1rem 0;
   }
 
-  .photo-contact a,
-  .photo-contact span {
-    display: block;
+  .photo-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     color: var(--photo-ink);
     font-weight: 600;
-    line-height: 1.7;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .photo-contact i {
+    color: var(--global-theme-color);
+    font-size: 1.05rem;
   }
 
   .photo-contact a:hover {
@@ -268,7 +286,7 @@
       grid-template-columns: 1fr;
     }
   }
-</style> <div class="photo-page"> <section class="photo-hero" aria-label="Photography portfolio header" data-photo-carousel=""> <div class="photo-hero__slides" aria-hidden="true"> <div class="photo-hero__slide is-active" data-photo-slide=""> <img src="/assets/img/photography/header/pic1.jpg" alt="Event photography header image 1" loading="eager"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/pic2.jpg" alt="Event photography header image 2" loading="lazy"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/pic3.jpg" alt="Event photography header image 3" loading="lazy"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/pic4.jpg" alt="Event photography header image 4" loading="lazy"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/pic5.jpg" alt="Event photography header image 5" loading="lazy"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/dsc06025.jpg" alt="Event photography header image 6" loading="lazy"> </div> </div> <div class="photo-hero__content"> <div class="photo-hero__label">photography</div> <h2>Moments in the sky and on the ground, documented with care.</h2> <p>Selected photo galleries from conferences, community events, public programs, and academic gatherings.</p> </div> <div class="photo-hero__controls" aria-label="Photography header image controls"> <button class="photo-hero__control" type="button" aria-label="Previous photo" data-photo-prev="">←</button> <button class="photo-hero__control" type="button" aria-label="Next photo" data-photo-next="">→</button> </div> </section> <section class="photo-intro"> <div> <p class="photo-kicker">approach</p> <h3>Visual records for the moments that make an event feel alive.</h3> <p> This portfolio is a home for event galleries: candid interactions, speakers, details, room atmosphere, and the small in-between moments that help people remember what it felt like to be there. </p> </div> <div class="photo-contact" aria-label="Photography contact links"> <a href="https://www.instagram.com/daisy.fisker/" rel="external nofollow noopener" target="_blank">Instagram: @daisy.fisker</a> <a href="mailto:desi.fisker@gmail.com">desi.fisker@gmail.com</a> </div> </section> <section class="photo-section"> <p class="photo-kicker">galleries</p> <h3>Event Galleries</h3> <div class="photo-event-grid"> <a class="photo-event-card" href="/projects/photography/dropout-august-2026/"> <img src="/assets/img/photography/events/dropout-august-2026/cover.jpg" alt="DropOut, August 2026 cover photo"> <p class="photo-event-card__meta"> August 12-16, 2026 · Parachute Montréal </p> <h4>DropOut, August 2026</h4> <p>Skydiving scenes from prep, freefall formations, canopy returns, and ground moments.</p> </a> </div> </section> </div> <script>
+</style> <div class="photo-page"> <section class="photo-hero" aria-label="Photography portfolio header" data-photo-carousel=""> <div class="photo-hero__slides" aria-hidden="true"> <div class="photo-hero__slide is-active" data-photo-slide=""> <img src="/assets/img/photography/header/pic1.jpg" alt="Event photography header image 1" loading="eager"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/pic2.jpg" alt="Event photography header image 2" loading="lazy"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/pic3.jpg" alt="Event photography header image 3" loading="lazy"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/pic4.jpg" alt="Event photography header image 4" loading="lazy"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/pic5.jpg" alt="Event photography header image 5" loading="lazy"> </div> <div class="photo-hero__slide" data-photo-slide=""> <img src="/assets/img/photography/header/dsc06025.jpg" alt="Event photography header image 6" loading="lazy"> </div> </div> <div class="photo-hero__content"> <div class="photo-hero__label">photography</div> <h2>Selected photo galleries from conferences, community events, public programs, and academic gatherings.</h2> </div> <div class="photo-hero__controls" aria-label="Photography header image controls"> <button class="photo-hero__control" type="button" aria-label="Previous photo" data-photo-prev="">←</button> <button class="photo-hero__control" type="button" aria-label="Next photo" data-photo-next="">→</button> </div> </section> <section class="photo-intro"> <div> <p class="photo-kicker photo-kicker--title">About Me</p> <h3>I enjoy capturing moments in the sky and on the ground, documented with care.</h3> <p> I have been skydiving since 2021 and have worked as a packer, coach, instructor, and tandem video flyer. I have 900 jumps, and I am excited to branch out into event and fun-jumper camera flying so I can capture the stoke and pure joy that comes from all of our favourite moments at the DZ with the ones we love! - Daisy </p> </div> <div class="photo-contact" aria-label="Photography contact links"> <a href="https://www.instagram.com/daisy.fisker/" rel="external nofollow noopener" target="_blank"> <i class="fa-brands fa-instagram" aria-hidden="true"></i> <span>@daisy.fisker</span> </a> <a href="mailto:desi.fisker@gmail.com"> <i class="fa-solid fa-envelope" aria-hidden="true"></i> <span>desi.fisker@gmail.com</span> </a> </div> </section> <section class="photo-section"> <p class="photo-kicker">galleries</p> <h3>Event Galleries</h3> <div class="photo-event-grid"> <a class="photo-event-card" href="/projects/photography/dropout-august-2026/"> <img src="/assets/img/photography/events/dropout-august-2026/cover.jpg" alt="DropOut, August 2026 cover photo"> <p class="photo-event-card__meta"> August 12-16, 2026 · Parachute Montréal </p> <h4>DropOut, August 2026</h4> <p>Skydiving scenes from prep, freefall formations, canopy returns, and ground moments.</p> </a> <a class="photo-event-card" href="/projects/photography/personal-season-edits/"> <img src="/assets/img/photography/header/pic2.jpg" alt="Personal Season Edits cover photo"> <p class="photo-event-card__meta"> Ongoing · Skydiving seasons </p> <h4>Personal Season Edits</h4> <p>Short season videos with notes on the jumps, DZs, skills, and milestones behind each edit.</p> </a> </div> </section> </div> <script>
   (() => {
     document.querySelectorAll("[data-photo-carousel]").forEach((carousel) => {
       const slides = Array.from(carousel.querySelectorAll("[data-photo-slide]"));
