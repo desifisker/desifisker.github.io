@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-nav: true
+nav: false
 nav_order: 1
 subtitle: Robotics, aerospace engineering, autonomous navigation, and field experimentation.
 
