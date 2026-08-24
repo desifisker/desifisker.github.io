@@ -23,6 +23,14 @@ __pycache__/
 # Local original photo exports. Optimized web copies live under assets/img/.
 Final_Edited_For_Website/
 
+# Local originals copied into public assets with web-safe filenames.
+IMG_0824.jpg
+paper.png
+thesis.png
+undergrad thesis.png
+UAV_See_UGV_Do_Video.mp4
+VirTR_Final.mp4
+
 # Private source documents used to populate site content. Do not publish these.
 Desiree_Fisker_CV_20250127.pdf
 fisker_masc25.pdf

@@ -1,6 +1,8 @@
 github_users:
-  - desifisker
 
 repo_description_lines_max: 2
 
-github_repos: []
+github_repos:
+  - decargroup/navlie
+  - utiasASRL/vtr3
+  - desifisker/virtual_teach_vtr_wrapper

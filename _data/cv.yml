@@ -40,7 +40,7 @@ cv:
     Publications:
       - title: "UAV See, UGV Do: Aerial Imagery and Virtual Teach Enabling Zero-Shot Ground Vehicle Repeat"
         date: "2025"
-        url: https://doi.org/10.1109/IROS60139.2025.11247387
+        url: /assets/pdf/fisker-uav-see-ugv-do-iros-2025.pdf
         publisher: "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
         summary: "With Alexander Krawciw, Sven Lilge, Melissa Greeff, and Timothy D. Barfoot. Pages 17518-17525."
       - title: "Zero-Shot Ground Vehicle Navigation Enabled by Aerial-Based Digital Twin Scene Reconstructions"
@@ -151,6 +151,14 @@ cv:
         date: "2016"
         awarder: Massachusetts Institute of Technology
         summary: "Introduction to Aerospace Engineering: Astronautics and Human Space Flight; GPA 4.00."
+
+    References:
+      - name: Dr. Timothy D. Barfoot
+        reference: "Director and Professor at the University of Toronto Institute for Aerospace Studies and lead of the Autonomous Space Robotics Lab. He supervised my MASc research on Virtual Teach and Repeat and co-authored my IROS paper on UAV-enabled, zero-shot UGV navigation. [Profile](https://asrl.utias.utoronto.ca/~tdb/)"
+      - name: Dr. Melissa Greeff
+        reference: "Assistant Professor at Queen's University whose work spans aerial robotics, control systems, learning-based control, multi-robot systems, vision-based navigation, and field robotics. She collaborated on my IROS virtual teach/repeat work as a co-author and robotics research mentor. [Profile](https://ingenuitylabs.queensu.ca/people/melissa-greeff)"
+      - name: Dr. Ruben Perez
+        reference: "Associate Professor in Mechanical and Aerospace Engineering at the Royal Military College of Canada and lead of the Advanced Aircraft Design Laboratory. I worked in his lab as an Aerospace Engineering Research Assistant on UAV/UGV attitude and stabilization control, magnetic-field-based navigation tooling, outdoor testing, and startup documentation. [Profile](https://www.rmc-cmr.ca/en/mechanical-and-aerospace-engineering/ruben-e-perez)"
 
     Hobbies and Accomplishments:
       - bullet: "Sport skydiving: 500+ solo skydives over three summer seasons."

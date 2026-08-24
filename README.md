@@ -99,11 +99,12 @@ Common files:
 - `_data/cv.yml` - rendered CV content.
 - `_bibliography/papers.bib` - publications page entries.
 - `_projects/*.md` - project pages.
-- `_pages/blog.md` and `_posts/` - blog listing and blog posts.
+- `_pages/blog.md` and `_posts/` - blog listing and blog posts. A few default al-folio sample posts are kept as examples.
 - `_news/*.md` - news items on the home page.
 - `_pages/cv.md` - CV page settings. `cv_pdf:` is intentionally blank so the CV tab renders as webpage sections.
 - `_pages/dropdown.md` - the `extras` dropdown in the top navigation.
-- `_pages/repositories.md` and `_pages/teaching.md` - currently set to `nav: false`, so they are hidden from the top navigation.
+- `_pages/repositories.md` - visible top navigation page for selected GitHub repositories.
+- `_pages/teaching.md` - currently set to `nav: false`, so it is hidden from the top navigation.
 
 Private/source documents that should not be published:
 
@@ -224,6 +225,8 @@ Current publication setup:
 
 - IROS paper has a local PDF in `assets/pdf/fisker-uav-see-ugv-do-iros-2025.pdf`.
 - MASc thesis links to the public Scholaris page instead of publishing a local thesis PDF.
+- Publication preview images live in `assets/img/publication_preview/`.
+- Publication videos live in `assets/video/`. Keep individual files under GitHub's 100 MB limit.
 
 ### Projects
 
@@ -317,13 +320,19 @@ To add a new event gallery:
 The current top navigation is:
 
 ```text
-about, blog, publications, projects, CV, extras
+about, blog, publications, projects, CV, repositories, extras
 ```
 
 The `extras` dropdown is controlled by:
 
 ```text
 _pages/dropdown.md
+```
+
+The repositories tab is populated from:
+
+```text
+_data/repositories.yml
 ```
 
 To hide a page from the top navigation, set:
@@ -436,6 +445,9 @@ Do not put private CV/thesis/source documents there unless you want them publicl
 - Public CV PDF: `assets/pdf/desiree-fisker-cv.pdf`
 - Public thesis link: <https://utoronto.scholaris.ca/items/f8efadbf-afb8-46e9-97be-72551ae875c0>
 - About-page headshot: `assets/img/desiree-fisker-headshot.jpg`
+- Publication previews: `assets/img/publication_preview/`
+- Publication videos: `assets/video/`
+- Selected repository list: `_data/repositories.yml`
 - Rendered CV source: `_data/cv.yml`
 - Photography landing page: `_projects/photography.md`
 - DropOut gallery page: `_pages/photography/dropout-august-2026.md`

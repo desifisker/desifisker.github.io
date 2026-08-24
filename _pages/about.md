@@ -9,7 +9,7 @@ subtitle: Robotics, aerospace engineering, autonomous navigation, and field expe
 profile:
   align: right
   image: desiree-fisker-headshot.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # set true to crop the image into a circle
   more_info: >
     <p>Robotics and Aerospace Engineering</p>
     <p>Toronto, Ontario, Canada</p>
