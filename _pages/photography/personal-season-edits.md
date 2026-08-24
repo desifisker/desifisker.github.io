@@ -194,7 +194,7 @@ og_image: /assets/img/photography/header/pic2.jpg
     </p>
   </section>
 
-  {% if season_edits and season_edits.size > 0 %}
+  {% if season_edits.size > 0 %}
     <section class="season-grid" aria-label="Personal skydiving season edit videos">
       {% for edit in season_edits %}
         <article class="season-entry">
@@ -223,7 +223,11 @@ og_image: /assets/img/photography/header/pic2.jpg
             </div>
           {% elsif edit.video %}
             <div class="season-video">
-              <video controls preload="metadata"{% if edit.poster %} poster="{{ edit.poster | relative_url }}"{% endif %}>
+              {% if edit.poster %}
+                <video controls preload="metadata" poster="{{ edit.poster | relative_url }}">
+              {% else %}
+                <video controls preload="metadata">
+              {% endif %}
                 <source src="{{ edit.video | relative_url }}" type="video/mp4">
               </video>
             </div>
