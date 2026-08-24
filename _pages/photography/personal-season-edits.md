@@ -194,50 +194,50 @@ og_image: /assets/img/photography/header/pic2.jpg
     </p>
   </section>
 
-  {% if season_edits.size > 0 %}
-    <section class="season-grid" aria-label="Personal skydiving season edit videos">
-      {% for edit in season_edits %}
-        <article class="season-entry">
-          <div>
-            <p class="season-entry__meta">{{ edit.season | default: "Season edit" }}</p>
-            <h3>{{ edit.title }}</h3>
-            <p>{{ edit.description }}</p>
-            <div class="season-entry__details" aria-label="{{ edit.title | escape }} details">
-              {% if edit.location %}
-                <div><strong>Location</strong><span>{{ edit.location }}</span></div>
-              {% endif %}
-              {% if edit.achievement %}
-                <div><strong>Highlights</strong><span>{{ edit.achievement }}</span></div>
-              {% endif %}
-            </div>
-          </div>
-          {% if edit.youtube %}
-            <div class="season-video">
-              <iframe
-                src="{{ edit.youtube }}"
-                title="{{ edit.title | escape }}"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-          {% elsif edit.video %}
-            <div class="season-video">
-              {% if edit.poster %}
-                <video controls preload="metadata" poster="{{ edit.poster | relative_url }}">
-              {% else %}
-                <video controls preload="metadata">
-              {% endif %}
-                <source src="{{ edit.video | relative_url }}" type="video/mp4">
-              </video>
-            </div>
-          {% else %}
-            <div class="season-placeholder">Video coming soon.</div>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </section>
-  {% else %}
-    <div class="season-empty">Personal season edits will appear here once the videos are ready to share.</div>
-  {% endif %}
+{% if season_edits.size > 0 %}
+<section class="season-grid" aria-label="Personal skydiving season edit videos">
+{% for edit in season_edits %}
+<article class="season-entry">
+<div>
+<p class="season-entry__meta">{{ edit.season | default: "Season edit" }}</p>
+<h3>{{ edit.title }}</h3>
+<p>{{ edit.description }}</p>
+<div class="season-entry__details" aria-label="{{ edit.title | escape }} details">
+{% if edit.location %}
+<div><strong>Location</strong><span>{{ edit.location }}</span></div>
+{% endif %}
+{% if edit.achievement %}
+<div><strong>Highlights</strong><span>{{ edit.achievement }}</span></div>
+{% endif %}
+</div>
+</div>
+{% if edit.youtube %}
+<div class="season-video">
+<iframe
+src="{{ edit.youtube }}"
+title="{{ edit.title | escape }}"
+loading="lazy"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen
+></iframe>
+</div>
+{% elsif edit.video %}
+<div class="season-video">
+{% if edit.poster %}
+<video controls preload="metadata" poster="{{ edit.poster | relative_url }}">
+{% else %}
+<video controls preload="metadata">
+{% endif %}
+<source src="{{ edit.video | relative_url }}" type="video/mp4">
+</video>
+</div>
+{% else %}
+<div class="season-placeholder">Video coming soon.</div>
+{% endif %}
+</article>
+{% endfor %}
+</section>
+{% else %}
+<div class="season-empty">Personal season edits will appear here once the videos are ready to share.</div>
+{% endif %}
 </div>
