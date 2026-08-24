@@ -22,7 +22,3 @@ __pycache__/
 
 # Local original photo exports. Optimized web copies live under assets/img/.
 Final_Edited_For_Website/
-
-# Pending local gallery. Remove these lines after explicit approval to publish.
-_pages/photography/dropout-august-2026.md
-assets/img/photography/events/dropout-august-2026/

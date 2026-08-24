@@ -1,10 +1,7 @@
-# Add published event galleries here.
-# Example:
-# - title: "Conference Reception"
-#   date: 2026-04-18
-#   date_label: "April 18, 2026"
-#   location: "New York, NY"
-#   description: "A brief one-sentence description of the event."
-#   cover: /assets/img/photography/events/conference-reception/cover.jpg
-#   url: /projects/photography/conference-reception/
-[]
+- title: "DropOut, August 2026"
+  date: 2026-08-20
+  date_label: "August 12-20, 2026"
+  location: "Parachute Montreal"
+  description: "Skydiving scenes from prep, freefall formations, canopy returns, and ground moments."
+  cover: /assets/img/photography/events/dropout-august-2026/cover.jpg
+  url: /projects/photography/dropout-august-2026/

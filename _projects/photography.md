@@ -2,7 +2,7 @@
 layout: page
 title: photography
 description: Event photography galleries and visual storytelling.
-img: assets/img/photography/cover-placeholder.svg
+img: assets/img/photography/events/dropout-august-2026/cover.jpg
 importance: 1
 category: creative
 permalink: /projects/photography/
@@ -42,7 +42,7 @@ images:
     align-items: end;
     padding: clamp(2rem, 5vw, 4.5rem);
     margin: 0 calc(50% - 50vw) 3rem;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.72)), url("{{ '/assets/img/photography/cover-placeholder.svg' | relative_url }}");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.72)), url("{{ '/assets/img/photography/events/dropout-august-2026/cover.jpg' | relative_url }}");
     background-position: center;
     background-size: cover;
     color: #ffffff;
