@@ -240,11 +240,13 @@
   }
 
   .photo-contact .al-email-protect::before {
-    content: "\f0e0";
-    color: var(--global-theme-color);
-    font-family: "Font Awesome 6 Free";
-    font-size: 1.05rem;
-    font-weight: 900;
+    content: "";
+    display: block;
+    width: 1.12rem;
+    height: 1.12rem;
+    background-color: var(--global-theme-color);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='20' height='16' x='2' y='4' rx='2'/%3E%3Cpath d='m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7'/%3E%3C/svg%3E") center / contain no-repeat;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='20' height='16' x='2' y='4' rx='2'/%3E%3Cpath d='m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7'/%3E%3C/svg%3E") center / contain no-repeat;
   }
 
   .photo-contact a:hover {
@@ -256,6 +258,7 @@
   .photo-contact a:hover i,
   .photo-contact .al-email-protect:hover::before {
     color: var(--global-hover-color);
+    background-color: var(--global-hover-color);
   }
 
   .photo-contact__label {
