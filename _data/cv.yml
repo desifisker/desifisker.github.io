@@ -1,0 +1,20 @@
+cv:
+  name: Desiree Fisker
+  label: Academic
+  email: desi.fisker@gmail.com
+  location:
+  image: ""
+  summary: ""
+
+  social_networks:
+    - network: GitHub
+      username: desifisker
+
+  address: {}
+
+  sections:
+    Education: []
+    Appointments: []
+    Publications: []
+    Awards: []
+    Teaching: []
