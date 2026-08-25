@@ -223,8 +223,8 @@ images:
         bits of chaos that made the event feel like itself.
       </p>
       <div class="event-tapes" aria-label="DropOut day tape video links">
-        <a href="https://www.youtube.com/" rel="external nofollow noopener" target="_blank">Day tape 1</a>
-        <a href="https://www.youtube.com/" rel="external nofollow noopener" target="_blank">Day tape 2</a>
+        <a href="https://youtu.be/xbXP-2dDdPA" rel="external nofollow noopener" target="_blank">Day tape 1</a>
+        <a href="https://youtu.be/SHOvf9hw_ko" rel="external nofollow noopener" target="_blank">Day tape 3</a>
       </div>
     </div>
     <div class="event-facts" aria-label="Event details">
