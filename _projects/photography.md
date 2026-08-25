@@ -395,7 +395,7 @@ hero_images:
     </div>
     <div class="photo-hero__content">
       <div class="photo-hero__label">photography</div>
-      <h2>Selected photo galleries from conferences, community events, public programs, and academic gatherings.</h2>
+      <h2>Capturing all things Skydiving: Events, vibes, and the love of the game!</h2>
     </div>
     {% if page.hero_images.size > 1 %}
       <div class="photo-hero__controls" aria-label="Photography header image controls">
@@ -408,10 +408,10 @@ hero_images:
   <section class="photo-intro">
     <div>
       <p class="photo-kicker photo-kicker--title">About Me</p>
-      <h3>I enjoy capturing moments in the sky and on the ground, documented with care.</h3>
+      <h3>Flying is one of my favourite things and catching amazing moments in the sky and on the ground to share makes it that much better!</h3>
       <p>
-        I have been skydiving since 2021 and have worked as a packer, coach, instructor, and tandem video flyer. I have 900 jumps, and I am
-        excited to branch out into event and fun-jumper camera flying so I can capture the stoke and pure joy that comes from all of our favourite
+        I've been skydiving since 2021 and have worked as a Packer, Coach, Instructor, Manifester and Tandem Videoflyer. I have ~900 jumps, and I'm
+        excited to branch out into event and fun-jumper camera flying to capture the stoke and pure joy that comes from all of our favourite
         moments at the DZ with the ones we love! - Daisy
       </p>
     </div>

@@ -221,7 +221,7 @@ og_image: /assets/img/photography/header/pic2.jpg
   <section class="season-intro">
     <p class="season-kicker">season videos</p>
     <p>
-      A home for 2-3 minute edits from different skydiving seasons: the DZs, jumps, friends, goals, ratings, camera experiments, and milestones
+      Edits from different skydiving seasons: the DZs, jumps, friends, goals, ratings, camera experiments, and milestones
       that made each stretch of the sport feel special.
     </p>
   </section>
