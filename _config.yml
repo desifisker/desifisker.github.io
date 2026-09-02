@@ -9,11 +9,11 @@ last_name: Fisker
 contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic website for Desiree Fisker, featuring robotics research, publications, projects, teaching, and event photography.
+  Academic website for Desiree Fisker, a McGill Mechanical Engineering PhD student working on collaborative decentralized SLAM, robotics research, publications, projects, and event photography.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: robotics, aerospace engineering, autonomous navigation, UAV, UGV, field robotics, publications, teaching, CV # add your own keywords or leave empty
+keywords: robotics, aerospace engineering, mechanical engineering, McGill University, DECAR, decentralized SLAM, autonomous navigation, UAV, UGV, field robotics, publications, CV # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎓 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.

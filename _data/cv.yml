@@ -1,10 +1,10 @@
 cv:
   name: Desiree Fisker
-  label: Robotics and Aerospace Engineering
+  label: PhD Student in Mechanical Engineering
   email: desiree.fisker@mail.mcgill.ca
   location: Montréal, Québec, Canada
   image: ""
-  summary: "Robotics and aerospace engineer focused on field robotics, autonomous navigation, UAV/UGV systems, perception, and scene reconstruction."
+  summary: "PhD student in mechanical engineering at McGill University, working in the DECAR lab on collaborative decentralized SLAM, state estimation, field robotics, autonomous navigation, UAV/UGV systems, perception, and scene reconstruction."
 
   social_networks:
     - network: GitHub
@@ -16,6 +16,15 @@ cv:
 
   sections:
     Education:
+      - institution: McGill University
+        location: Montréal, Québec, Canada
+        degree: Doctor of Philosophy
+        area: Mechanical Engineering
+        start_date: "2025-09"
+        end_date: present
+        highlights:
+          - 'Member of the <a href="https://sites.google.com/view/decarresearch/">Dynamics, Estimation, and Control in Aerospace and Robotics (DECAR) Lab</a>, supervised by <a href="https://www.mcgill.ca/mecheng/james-forbes">Prof. James Forbes</a>.'
+          - "Research focus: collaborative decentralized SLAM, state estimation, multi-robot autonomy, and robotic navigation."
       - institution: University of Toronto
         location: Toronto, Ontario, Canada
         degree: Master of Applied Science
@@ -55,9 +64,14 @@ cv:
         summary: "With A. Zhong, B. Beggs, C. Viloria, J. Fisman-Guarascio, and T. Lahteenmaa-Swerdlyk."
 
     Research Interests:
-      - bullet: "Robotics, systems engineering, UAVs and UGVs, aerospace engineering, computer vision, and perception."
+      - bullet: "Robotics, systems engineering, UAVs and UGVs, aerospace engineering, guidance and navigation, collaborative decentralized SLAM, state estimation, computer vision, and perception."
 
     Projects:
+      - name: Collaborative Decentralized SLAM
+        summary: "PhD research in the DECAR lab on collaborative decentralized simultaneous localization and mapping for robotic systems."
+        highlights:
+          - "Working under Prof. James Forbes on state-estimation and mapping methods for collaborative robotic systems."
+          - "Exploring decentralized information sharing, robot navigation, and SLAM methods for fieldable autonomous systems."
       - name: Virtual Teach and Repeat via NeRF World Representations
         summary: "Aerial-image-based digital twin pipeline for virtually teaching UGV routes before real-world deployment."
         highlights:
@@ -98,7 +112,7 @@ cv:
           - "Integrated hardware and software for attitude and stabilization control on UAVs and UGVs."
           - "Built MATLAB and Python tools for waypoint and obstacle assessment from magnetic-field data."
           - "Conducted outdoor navigation testing and created startup documentation for autonomous guidance hardware."
-      - company: Skydive Toronto Inc.
+      - company: Skydive Toronto Inc. and Parachute Montréal
         position: Instructor, Coach, Video Flyer, and Packer
         start_date: "2021-06"
         end_date: present
@@ -141,6 +155,8 @@ cv:
           - "Developed a mechanical double-split parachute deployment mechanism and payload concepts for dark-matter detection and exo-planetary exploration."
 
     Awards:
+      - title: FRQNT Doctoral Research Scholarship
+        summary: "$25,000/year for four years ($100,000 total)."
       - title: Queen's University Dean's Scholar
         summary: "First Class Honours Graduate."
       - title: Queen's University Principal's Scholarship
@@ -161,8 +177,8 @@ cv:
         reference: "Associate Professor in Mechanical and Aerospace Engineering at the Royal Military College of Canada and lead of the Advanced Aircraft Design Laboratory. I worked in his lab as an Aerospace Engineering Research Assistant on UAV/UGV attitude and stabilization control, magnetic-field-based navigation tooling, outdoor testing, and startup documentation."
 
     Hobbies and Accomplishments:
-      - bullet: "Sport skydiving: 500+ solo skydives over three summer seasons."
-      - bullet: "Scuba and cavern diving: Advanced Open Water certified with six cenote cavern dives."
+      - bullet: "Sport skydiving: 900+ solo skydives over six summer seasons."
+      - bullet: "Scuba and cavern diving: NAUI Rescue Scuba Diver, Advanced Open Water certified, with 12 cenote cavern dives."
       - bullet: "Rock climbing: bouldering and top-rope certified."
       - bullet: "Backcountry camping: three week-long ocean kayak camping trips and one three-day winter camping trip."
       - bullet: "Woodworking projects including a folding Muskoka chair and magnetic levitating fan."
