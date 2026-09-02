@@ -15,6 +15,9 @@ cv:
     region: Québec
 
   sections:
+    Research Interests:
+      - bullet: "Robotics, systems engineering, UAVs and UGVs, aerospace engineering, guidance and navigation, collaborative decentralized SLAM, state estimation, computer vision, and perception."
+
     Education:
       - institution: McGill University
         location: Montréal, Québec, Canada
@@ -62,126 +65,6 @@ cv:
         url: http://hdl.handle.net/1974/31460
         publisher: "PHYS/ENPH 454 Advanced Engineering Physics Design Project Collection, Queen's University"
         summary: "With A. Zhong, B. Beggs, C. Viloria, J. Fisman-Guarascio, and T. Lahteenmaa-Swerdlyk."
-
-    Research Interests:
-      - bullet: "Robotics, systems engineering, UAVs and UGVs, aerospace engineering, guidance and navigation, collaborative decentralized SLAM, state estimation, computer vision, and perception."
-
-    Projects:
-      - name: Collaborative Decentralized SLAM
-        summary: "PhD research in the DECAR lab on collaborative decentralized simultaneous localization and mapping for robotic systems."
-        highlights:
-          - "Working under Prof. James Forbes on state-estimation and mapping methods for collaborative robotic systems."
-          - "Exploring decentralized information sharing, robot navigation, and SLAM methods for fieldable autonomous systems."
-      - name: Virtual Teach and Repeat via NeRF World Representations
-        summary: "Aerial-image-based digital twin pipeline for virtually teaching UGV routes before real-world deployment."
-        highlights:
-          - "Developed a pipeline for virtual piloting of a UGV in simulation using a drone-image-trained NeRF reconstruction."
-          - "Tuned NeRF training parameters for clear, differentiable novel viewpoints of large-scale outdoor scenes."
-          - "Compared physical and virtual sensor models to align depth and feature information for dataset construction."
-      - name: Autonomous UAV Navigation
-        summary: "GNSS-denied UAV localization using satellite imagery, inverse NeRF methods, and real image-pose datasets."
-        highlights:
-          - "Worked on GNSS-denied UAV localization below 30 m AGL using Google Earth satellite imagery and inverse NeRF methods."
-          - "Created image-pose datasets with stereo camera tracking in a VICON lab."
-          - "Evaluated Google Earth 3D renders against real images using SIFT, SURF, ORB, and SuperPoint."
-      - name: RRT Path Planning and Deep Reinforcement Learning
-        summary: "Sampling-based path planning work that conditions future RRT samples on previous sampling experience."
-        highlights:
-          - "Modified RRT sampling to condition future states on previous sampling experience."
-          - "Developed baseline learned-experience systems using Hidden Markov Models and recurrent neural networks."
-      - name: Trajectory Optimization for Solar-Powered UAVs with NEAT
-        summary: "Trajectory optimization for long-duration solar-powered UAV flight."
-        highlights:
-          - "Built Python simulations and tuned NEAT-based neural network architectures for solar-powered UAV trajectory optimization."
-          - "Integrated receding horizon control to reduce computational cost."
-
-    Experience:
-      - company: Cesaroni Technology Inc.
-        position: Aerospace Engineering Intern
-        start_date: "2021-05"
-        end_date: "2022-08"
-        highlights:
-          - "Contributed to large-scale testing facility CAD assemblies and test-system design."
-          - "Designed and implemented signal monitoring, data acquisition, and load-cell mounting methods for hazardous testing environments."
-          - "Used mathematical models and SolidWorks FEA to optimize retaining-ring and airframe components."
-      - company: Royal Military College of Canada, Advanced Aircraft Design Lab
-        position: Aerospace Engineering Research Assistant
-        start_date: "2020-05"
-        end_date: "2020-12"
-        highlights:
-          - "Integrated hardware and software for attitude and stabilization control on UAVs and UGVs."
-          - "Built MATLAB and Python tools for waypoint and obstacle assessment from magnetic-field data."
-          - "Conducted outdoor navigation testing and created startup documentation for autonomous guidance hardware."
-      - company: Skydive Toronto Inc. and Parachute Montréal
-        position: Instructor, Coach, Video Flyer, and Packer
-        start_date: "2021-06"
-        end_date: present
-        highlights:
-          - "Provided adaptive teaching and safety instruction to novice skydivers."
-          - "Conducted pre-boarding, pre-jump, and post-gear-up safety and gear checks."
-          - "Packed over 700 Sigma and Micro Sigma tandem parachutes and 800 sport parachutes with no malfunctions and clean openings."
-
-    Teaching:
-      - bullet: "**First-Year Calculus TA Coordinator, University of Toronto.** Coordinated grading, office hours, and tutorial content across 22 teaching assistants for approximately 1100 students."
-      - bullet: "**Engineering Design 200A/200B Teaching Assistant, Queen's University.** Supported technical course instruction, graded reports and presentations, and managed four teams of five students."
-
-    Professional Memberships:
-      - bullet: "IEEE Student Member."
-      - bullet: "Scuba Schools International member."
-      - bullet: "Coaching Association of Canada member."
-      - bullet: "Canadian Sport Parachuting Association member."
-
-    Volunteer:
-      - organization: Queen's Rocket Engineering Team
-        position: Chief Operations Officer
-        start_date: "2022-07"
-        end_date: "2023-06"
-        highlights:
-          - "Worked with Queen's faculty on alumni funding frameworks and design-team strategic planning."
-          - "Guided subteam leads on meetings, technical research, team engagement, and report deadlines."
-      - organization: Queen's Rocket Engineering Team
-        position: Chief Technical Officer
-        start_date: "2020-07"
-        end_date: "2021-06"
-        highlights:
-          - "Evaluated sounding-rocket design choices across composite, mechanical, and electrical subsystems."
-          - "Established vibration, ejection, continuity, and payload testing methods."
-      - organization: Queen's Rocket Engineering Team
-        position: Payload Team Lead
-        start_date: "2019-07"
-        end_date: "2020-06"
-        highlights:
-          - "Led payload research, documentation, subsystem testing, and technical-skill development."
-          - "Developed a mechanical double-split parachute deployment mechanism and payload concepts for dark-matter detection and exo-planetary exploration."
-
-    Awards:
-      - title: FRQNT Doctoral Research Scholarship
-        summary: "$25,000/year for four years ($100,000 total)."
-      - title: Queen's University Dean's Scholar
-        summary: "First Class Honours Graduate."
-      - title: Queen's University Principal's Scholarship
-        summary: "$7,000 scholarship."
-      - title: NSERC Undergraduate Student Research Award
-        summary: "$6,000 research award for work at the Royal Military College of Canada."
-      - title: MITx Certificate of Achievement
-        date: "2016"
-        awarder: Massachusetts Institute of Technology
-        summary: "Introduction to Aerospace Engineering: Astronautics and Human Space Flight; GPA 4.00."
-
-    References:
-      - name: '<a href="https://asrl.utias.utoronto.ca/~tdb/">Dr. Timothy D. Barfoot</a>'
-        reference: "Director and Professor at the University of Toronto Institute for Aerospace Studies and lead of the Autonomous Space Robotics Lab. He supervised my MASc research on Virtual Teach and Repeat and co-authored my IROS paper on UAV-enabled, zero-shot UGV navigation."
-      - name: '<a href="https://roboralab.com/team.html">Dr. Melissa Greeff</a>'
-        reference: "Assistant Professor at Queen's University whose work spans aerial robotics, control systems, learning-based control, multi-robot systems, vision-based navigation, and field robotics. She collaborated on my IROS virtual teach/repeat work as a co-author and robotics research mentor."
-      - name: '<a href="https://www.rmc-cmr.ca/en/mechanical-and-aerospace-engineering/ruben-e-perez">Dr. Ruben Perez</a>'
-        reference: "Associate Professor in Mechanical and Aerospace Engineering at the Royal Military College of Canada and lead of the Advanced Aircraft Design Laboratory. I worked in his lab as an Aerospace Engineering Research Assistant on UAV/UGV attitude and stabilization control, magnetic-field-based navigation tooling, outdoor testing, and startup documentation."
-
-    Hobbies and Accomplishments:
-      - bullet: "Sport skydiving: 900+ solo skydives over six summer seasons."
-      - bullet: "Scuba and cavern diving: NAUI Rescue Scuba Diver, Advanced Open Water certified, with 12 cenote cavern dives."
-      - bullet: "Rock climbing: bouldering and top-rope certified."
-      - bullet: "Backcountry camping: three week-long ocean kayak camping trips and one three-day winter camping trip."
-      - bullet: "Woodworking projects including a folding Muskoka chair and magnetic levitating fan."
 
     Skills:
       - name: Programming
@@ -235,3 +118,79 @@ cv:
           - Pixhawk
           - Taps
           - Saws and blades
+
+    Projects:
+      - name: Collaborative Decentralized SLAM
+        summary: "PhD research in the DECAR lab on collaborative decentralized simultaneous localization and mapping for robotic systems."
+        highlights:
+          - "Working under Prof. James Forbes on state-estimation and mapping methods for collaborative robotic systems."
+          - "Exploring decentralized information sharing, robot navigation, and SLAM methods for fieldable autonomous systems."
+      - name: Virtual Teach and Repeat via NeRF World Representations
+        summary: "Aerial-image-based digital twin pipeline for virtually teaching UGV routes before real-world deployment."
+        highlights:
+          - "Developed a pipeline for virtual piloting of a UGV in simulation using a drone-image-trained NeRF reconstruction."
+          - "Tuned NeRF training parameters for clear, differentiable novel viewpoints of large-scale outdoor scenes."
+          - "Compared physical and virtual sensor models to align depth and feature information for dataset construction."
+      - name: Autonomous UAV Navigation
+        summary: "GNSS-denied UAV localization using satellite imagery, inverse NeRF methods, and real image-pose datasets."
+        highlights:
+          - "Worked on GNSS-denied UAV localization below 30 m AGL using Google Earth satellite imagery and inverse NeRF methods."
+          - "Created image-pose datasets with stereo camera tracking in a VICON lab."
+          - "Evaluated Google Earth 3D renders against real images using SIFT, SURF, ORB, and SuperPoint."
+      - name: RRT Path Planning and Deep Reinforcement Learning
+        summary: "Sampling-based path planning work that conditions future RRT samples on previous sampling experience."
+        highlights:
+          - "Modified RRT sampling to condition future states on previous sampling experience."
+          - "Developed baseline learned-experience systems using Hidden Markov Models and recurrent neural networks."
+      - name: Trajectory Optimization for Solar-Powered UAVs with NEAT
+        summary: "Trajectory optimization for long-duration solar-powered UAV flight."
+        highlights:
+          - "Built Python simulations and tuned NEAT-based neural network architectures for solar-powered UAV trajectory optimization."
+          - "Integrated receding horizon control to reduce computational cost."
+
+    Awards:
+      - title: FRQNT Doctoral Research Scholarship
+        summary: "CAD 25,000/year for four years (CAD 100,000 total)."
+      - title: Queen's University Dean's Scholar
+        summary: "First Class Honours Graduate."
+      - title: Queen's University Principal's Scholarship
+        summary: "CAD 7,000 scholarship."
+      - title: NSERC Undergraduate Student Research Award
+        summary: "CAD 6,000 research award for work at the Royal Military College of Canada."
+      - title: MITx Certificate of Achievement
+        date: "2016"
+        awarder: Massachusetts Institute of Technology
+        summary: "Introduction to Aerospace Engineering: Astronautics and Human Space Flight; GPA 4.00."
+
+    Teaching:
+      - bullet: "**First-Year Calculus TA Coordinator, University of Toronto.** Coordinated grading, office hours, and tutorial content across 22 teaching assistants for approximately 1100 students."
+      - bullet: "**Engineering Design 200A/200B Teaching Assistant, Queen's University.** Supported technical course instruction, graded reports and presentations, and managed four teams of five students."
+
+    "Experience ":
+      - bullet: "**Instructor, Coach, Video Flyer, and Packer, Skydive Toronto Inc. and Parachute Montréal (2021-present).** Provided adaptive teaching and safety instruction to novice skydivers; conducted pre-boarding, pre-jump, and post-gear-up safety and gear checks; packed over 700 Sigma and Micro Sigma tandem parachutes and 800 sport parachutes with no malfunctions and clean openings."
+      - bullet: "**Aerospace Engineering Intern, Cesaroni Technology Inc. (2021-2022).** Contributed to large-scale testing facility CAD assemblies and test-system design; designed and implemented signal monitoring, data acquisition, and load-cell mounting methods for hazardous testing environments; used mathematical models and SolidWorks FEA to optimize retaining-ring and airframe components."
+      - bullet: "**Aerospace Engineering Research Assistant, Royal Military College of Canada, Advanced Aircraft Design Lab (2020).** Integrated hardware and software for attitude and stabilization control on UAVs and UGVs; built MATLAB and Python tools for waypoint and obstacle assessment from magnetic-field data; conducted outdoor navigation testing and created startup documentation for autonomous guidance hardware."
+      - bullet: "**Chief Operations Officer, Queen's Rocket Engineering Team (2022-2023).** Worked with Queen's faculty on alumni funding frameworks and design-team strategic planning; guided subteam leads on meetings, technical research, team engagement, and report deadlines."
+      - bullet: "**Chief Technical Officer, Queen's Rocket Engineering Team (2020-2021).** Evaluated sounding-rocket design choices across composite, mechanical, and electrical subsystems; established vibration, ejection, continuity, and payload testing methods."
+      - bullet: "**Payload Team Lead, Queen's Rocket Engineering Team (2019-2020).** Led payload research, documentation, subsystem testing, and technical-skill development; developed a mechanical double-split parachute deployment mechanism and payload concepts for dark-matter detection and exo-planetary exploration."
+
+    Professional Memberships:
+      - bullet: "IEEE Student Member."
+      - bullet: "Scuba Schools International member."
+      - bullet: "Coaching Association of Canada member."
+      - bullet: "Canadian Sport Parachuting Association member."
+
+    Hobbies and Accomplishments:
+      - bullet: "Sport skydiving: 900+ solo skydives over six summer seasons."
+      - bullet: "Scuba and cavern diving: NAUI Rescue Scuba Diver, Advanced Open Water certified, with 12 cenote cavern dives."
+      - bullet: "Rock climbing: bouldering and top-rope certified."
+      - bullet: "Backcountry camping: three week-long ocean kayak camping trips and one three-day winter camping trip."
+      - bullet: "Woodworking projects including a folding Muskoka chair and magnetic levitating fan."
+
+    References:
+      - name: '<a href="https://asrl.utias.utoronto.ca/~tdb/">Dr. Timothy D. Barfoot</a>'
+        reference: "Director and Professor at the University of Toronto Institute for Aerospace Studies and lead of the Autonomous Space Robotics Lab. He supervised my MASc research on Virtual Teach and Repeat and co-authored my IROS paper on UAV-enabled, zero-shot UGV navigation."
+      - name: '<a href="https://roboralab.com/team.html">Dr. Melissa Greeff</a>'
+        reference: "Assistant Professor at Queen's University whose work spans aerial robotics, control systems, learning-based control, multi-robot systems, vision-based navigation, and field robotics. She collaborated on my IROS virtual teach/repeat work as a co-author and robotics research mentor."
+      - name: '<a href="https://www.rmc-cmr.ca/en/mechanical-and-aerospace-engineering/ruben-e-perez">Dr. Ruben Perez</a>'
+        reference: "Associate Professor in Mechanical and Aerospace Engineering at the Royal Military College of Canada and lead of the Advanced Aircraft Design Laboratory. I worked in his lab as an Aerospace Engineering Research Assistant on UAV/UGV attitude and stabilization control, magnetic-field-based navigation tooling, outdoor testing, and startup documentation."
